@@ -1,0 +1,60 @@
+01 1 CLUBS final.png
+01 1 DIAMOND final ps.png
+01 1 HEART final ps.png
+01 1 SPADE final ps.png
+02 2 CLUBS final.png
+02 2 DIAMOND final ps.png
+02 2 HEART final ps.png
+02 2 SPADE final.png
+03 3 CLUBS final.png
+03 3 DIAMOND final ps.png
+03 3 HEART final ps.png
+03 3 SPADE final ps.png
+04 4 CLUBS final.png
+04 4 DIAMOND final ps.png
+04 4 HEART final.png
+04 4 SPADE final.png
+05 5 CLUBS final ps.png
+05 5 DIAMOND final ps.png
+05 5 HEART final.png
+05 5 SPADE final ps.png
+06 6 CLUBS final ps.png
+06 6 DIAMOND final ps.png
+06 6 HEART final ps.png
+06 6 SPADE final ps.png
+07 7 CLUBS final ps.png
+07 7 DIAMOND final ps.png
+07 7 HEART final ps.png
+07 7 SPADE final ps.png
+08 8 CLUBS final ps.png
+08 8 DIAMOND final ps.png
+08 8 HEART final ps.png
+08 8 SPADE final ps.png
+09 9 CLUBS final ps.png
+09 9 DIAMOND final ps.png
+09 9 HEART final ps.png
+09 9 SPADE final ps.png
+10 10 CLUBS final ps.png
+10 10 DIAMOND final ps.png
+10 10 HEART final ps.png
+10 10 SPADE final ps.png
+12 J CLUBS final ps.png
+12 J DIAMOND final ps.png
+12 J HEART final ps.png
+12 J SPADE final ps.png
+13 Q CLUBS final ps.png
+13 Q DIAMOND final ps.png
+13 Q HEART final ps.png
+13 Q SPADE final ps.png
+14 K CLUBS final ps.png
+14 K DIAMOND final ps.png
+14 K HEART final ps.png
+14 K SPADE final ps.png
+BACK1 ZIGZAG.png
+BACK1.png
+BACK2 ZIGZAG.png
+BACK2.png
+BACK3.png
+BACK4.png
+JOKER BLACK.png
+JOKER RED.png

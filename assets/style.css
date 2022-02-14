@@ -1,0 +1,77 @@
+/* Color palette */
+:root{
+
+    --main1-color: black;
+    --main2-color: #2C430E;
+    --sec1-color: #537922;
+    --sec2-color: #ABCC79;
+    --light1-color: #C1CB7C;
+    --light2-color: #D8E8C1;
+
+    --score-color: #f89633;
+    --scorebk-color: #234334;
+    --scorebrd-color: #fffcff;
+    --empty-color: #606060;
+}
+
+
+/* Game header to be bold */
+
+.deck .card
+{
+    border: solid 1px #aaa;
+    border-radius: 1px;
+    width: 95px;
+    height: 150px;
+    float:left;
+    background-color: white;
+    padding: 3px 3px 3px 3px;
+    margin: 5px;
+}
+
+.card2
+{
+    width: 50px;
+    padding: 10px;
+    border: solid 1px #808080;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    margin: 3px;
+    border:solid 3px;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'menu main right'
+    'footer footer footer'; 
+    grid-template-columns: 150px auto 150px;
+    grid-gap: 1px;
+}
+.grid-item
+{
+ 
+  background-color:#ebece9;
+  padding: 10px;
+}
+.dealtCard
+{
+    width: 120px;
+    height: 190px;
+}
+.dealerName, .playerName
+{
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 0%;
+    padding: 0%;
+}
+.playArea
+{
+    text-align: center;
+}
