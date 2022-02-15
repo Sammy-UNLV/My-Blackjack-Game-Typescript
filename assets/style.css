@@ -51,12 +51,12 @@
     'menu main right'
     'footer footer footer'; 
     grid-template-columns: 150px auto 150px;
-    grid-gap: 1px;
+    grid-gap: 0px;
 }
 .grid-item
 {
  
-  background-color:#ebece9;
+  background-color:darkgreen;
   padding: 10px;
 }
 .dealtCard
@@ -74,4 +74,11 @@
 .playArea
 {
     text-align: center;
+}
+.statLabel
+{
+    font-weight: bolder;
+    font-size: large;
+    margin: 0%;
+    padding: 0%;
 }
