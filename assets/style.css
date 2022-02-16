@@ -59,17 +59,19 @@
   background-color:darkgreen;
   padding: 10px;
 }
-.dealtCard
+#dealtCard
 {
     width: 120px;
     height: 190px;
 }
-.dealerName, .playerName
+.names
 {
-    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:normal;
     font-size: x-large;
     margin: 0%;
     padding: 0%;
+    color: aliceblue;
 }
 .playArea
 {
@@ -77,8 +79,22 @@
 }
 .statLabel
 {
-    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
     font-size: large;
     margin: 0%;
     padding: 0%;
+    color: aliceblue;
+}
+#betAmount
+{
+    font-size:xx-large;
+    font-weight: bold;
+    color:gold;
+}
+#myMoney, #hands
+{
+    font-size:large;
+    font-weight: normal;
+    color:gold;
 }

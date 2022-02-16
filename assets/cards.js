@@ -42,18 +42,18 @@ function createDeck()
         {value: 10, type: "10", suite: "Diamond", img: "10 10 DIAMOND final ps.png"},
         {value: 10, type: "10", suite: "Heart", img: "10 10 HEART final ps.png"},
         {value: 10, type: "10", suite: "Spade", img: "10 10 SPADE final ps.png"},
-        {value: 12, type: "Jack", suite: "Clubs", img: "12 J CLUBS final ps.png"},
-        {value: 12, type: "Jack", suite: "Diamond", img: "12 J DIAMOND final ps.png"},
-        {value: 12, type: "Jack", suite: "Heart", img: "12 J HEART final ps.png"},
-        {value: 12, type: "Jack", suite: "Spade", img: "12 J SPADE final ps.png"},
-        {value: 13, type: "Queen", suite: "Clubs", img: "13 Q CLUBS final ps.png"},
-        {value: 13, type: "Queen", suite: "SDiamond", img: "13 Q DIAMOND final ps.png"},
-        {value: 13, type: "Queen", suite: "Heart", img: "13 Q HEART final ps.png"},
-        {value: 13, type: "Queen", suite: "Spade", img: "13 Q SPADE final ps.png"},
-        {value: 14, type: "King", suite: "Clubs", img: "14 K CLUBS final ps.png"},
-        {value: 14, type: "King", suite: "Diamond", img: "14 K DIAMOND final ps.png"},
-        {value: 14, type: "King", suite: "Heart", img: "14 K HEART final ps.png"},
-        {value: 14, type: "King", suite: "Spade", img: "14 K SPADE final ps.png"},
+        {value: 10, type: "Jack", suite: "Clubs", img: "12 J CLUBS final ps.png"},
+        {value: 10, type: "Jack", suite: "Diamond", img: "12 J DIAMOND final ps.png"},
+        {value: 10, type: "Jack", suite: "Heart", img: "12 J HEART final ps.png"},
+        {value: 10, type: "Jack", suite: "Spade", img: "12 J SPADE final ps.png"},
+        {value: 10, type: "Queen", suite: "Clubs", img: "13 Q CLUBS final ps.png"},
+        {value: 10, type: "Queen", suite: "SDiamond", img: "13 Q DIAMOND final ps.png"},
+        {value: 10, type: "Queen", suite: "Heart", img: "13 Q HEART final ps.png"},
+        {value: 10, type: "Queen", suite: "Spade", img: "13 Q SPADE final ps.png"},
+        {value: 10, type: "King", suite: "Clubs", img: "14 K CLUBS final ps.png"},
+        {value: 10, type: "King", suite: "Diamond", img: "14 K DIAMOND final ps.png"},
+        {value: 10, type: "King", suite: "Heart", img: "14 K HEART final ps.png"},
+        {value: 10, type: "King", suite: "Spade", img: "14 K SPADE final ps.png"},
         {value: 15, type: "Little Joker", suite: "Joker", img: "JOKER BLACK.png"},
         {value: 16, type: "Big joker", suite: "Joker", img: "JOKER RED.png"},
     ];
@@ -67,7 +67,8 @@ function createDeck()
         {value: 4, type: "back", suite: "Back3", img: "BACK3.png"},
         {value: 4, type: "back", suite: "Back4", img: "BACK4.png"}
     ]
-    renderDeck();
+    // the render is just for testing on the card_viwer page.
+    // renderDeck();
 	return deckOfCards, deckBack;
 }
 
@@ -80,22 +81,21 @@ function shuffle()
 	for (let i = 0; i < 200; i++)
 	{
 		let location1 = Math.floor((Math.random() * deckOfCards.length));
-        console.log(location1);
 		let location2 = Math.floor((Math.random() * deckOfCards.length));
 		let tmp = deckOfCards[location1];
 
 		deckOfCards[location1] = deckOfCards[location2];
 		deckOfCards[location2] = tmp;
-        console.log(deckOfCards[location1] + " - - - - " + deckOfCards[location2])
 	}
-    renderDeck();
+
+    // the render is just for testing on the card_viwer page.
+    // renderDeck();
 }
-//This code is jst to find if the images appear
+//This code is just to find if the images appear
 //Remove when the card gameis being built
 function renderDeck()
 {
     document.getElementById("deck").innerHTML = "";
-    console.log(deckOfCards[0].suite);
     let = imgRoot = "./assets/cards/"
 	for(let i = 0; i < deckOfCards.length; i++)
 	{
@@ -109,4 +109,3 @@ function renderDeck()
 		document.getElementById("deck").appendChild(cardDiv);
 	}
 }
-console.log(deckOfCards);
