@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -17,20 +17,20 @@
         <div class="grid-item">
             <div class="playArea">
                 <div id="houseDiv">
-                    <div><p class="names">The House</p></div>
+                    <div><p class="names" id="houseName">The House</p></div>
                     <div id="dealerHand"><img id="dealtCard" src="./assets/cards/BACK1.png"><img id="dealtCard" src="./assets/cards/BACK1.png"></div>
                 </div>
                 <br>
                 <div class="bet">
                     <label id="betAmount">$0.00</label><br>
-                    <button id="play">Play</button>
+                    <button id="play">Deal</button>
                     <button id="raiseBet">Raise Bet</button>
                     <button id="lowerBet">Lower Bet</button>
                     
                 </div>
                 <br>
                 <div id="playerDiv">
-                    <div><p class="names">Player Hand</p></div>
+                    <div><p class="names" id="playerName">Player Hand</p></div>
                     <div id="playerHand"><img id="dealtCard" src="./assets/cards/BACK1.png"><img id="dealtCard" src="./assets/cards/BACK1.png"></div>
                 </div>
                 <div class="controls">
@@ -38,7 +38,7 @@
 
                     <button type="button" id="hitBtn" onClick="hit('player')">Hit</button>
                     
-                    <button type="button" id="stayBtn">Stay</button>
+                    <button type="button" id="standBtn" onClick="hit('dealer')">Stand</button>
                 </div>
             </div>
         </div>
@@ -48,12 +48,20 @@
             <br>
             <p class="statLabel">HANDS</p>
             <p class="statLabel" id="hands">0</p>
+            <br>
+            <p class="statLabel">W/L</p>
+            <p class="statLabel" id="wlp">0%</p>
+            <br>
+            <p class="statLabel">BLACKJACKS</p>
+            <p class="statLabel" id="blackJacks">0</p>
         </div>
+
         <div class="grid-item"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
     </div>
     <button id="clear" onClick="clearTable()">Clear Table</button>
+    <button id="clear" onClick="scoreHand('house')">Score House</button>
     <script type="text/javascript" src="./assets/cards.js"></script>
     <script type="text/javascript" src="./assets/java.js"></script>   
 </body>
