@@ -2,10 +2,10 @@ var deckOfCards = [];
 function createDeck()
 {
 	deckOfCards = [
-        {value: 1, type: "Ace", suite: "Clubs", img: "01 1 CLUBS final.png"},
-        {value: 1, type: "Ace", suite: "Diamond", img: "01 1 DIAMOND final ps.png"},
-        {value: 1, type: "Ace", suite: "Heart", img: "01 1 HEART final ps.png"},
-        {value: 1, type: "Ace", suite: "Spade", img: "01 1 SPADE final ps.png"},
+        {value: 11, type: "Ace", suite: "Clubs", img: "01 1 CLUBS final.png"},
+        {value: 11, type: "Ace", suite: "Diamond", img: "01 1 DIAMOND final ps.png"},
+        {value: 11, type: "Ace", suite: "Heart", img: "01 1 HEART final ps.png"},
+        {value: 11, type: "Ace", suite: "Spade", img: "01 1 SPADE final ps.png"},
         {value: 2, type: "2", suite: "Clubs", img: "02 2 CLUBS final.png"},
         {value: 2, type: "2", suite: "Diamond",img: "02 2 DIAMOND final ps.png"}, 
         {value: 2, type: "2", suite: "Heart", img: "02 2 HEART final ps.png"},
