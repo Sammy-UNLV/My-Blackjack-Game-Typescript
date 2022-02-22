@@ -17,26 +17,19 @@ houseName = "The House";
 inPlayCheck(false);
 let hole = true;
 
+// let gameStats
 // myBlackJackStorage.setItem(
-//   "p1Name",
-//   "p1Money",
-//   "p1Hands",
-//   "p1Wins",
-//   "p1Losses",
-//   "p1BlackJacks"
-// );
-// initialize Local Storage
+//    "pName",
+//    "pMoney",
+//    "pGames",
+//    "pWins",
+//    "pBlackJacks"
+//  );
 
-// 
-//load localStorage Information
 
 
 updateMoney(1000);
-//Prompt User to Enter thier name
 
-//Update Names
-
-//Click button to start asgame will load without cards
 
 // Update the players money
 function updateMoney(amount) {
@@ -202,7 +195,12 @@ function updateStats(){
   console.log(`Games: ${gamesPlayed} - Games Won: ${gamesWon} - ${Date.now()}`)
   document.getElementById("myMoney").innerHTML = "$" + myMoney.toFixed(2);
   document.getElementById("gamesPlayed").innerHTML = gamesPlayed;
+  document.getElementById("wins").innerHTML = gamesWon;
   document.getElementById("wlp").innerHTML = wlp.toFixed(2) + "%";
   document.getElementById("blackJacks").innerHTML = playerBJ;
   
+  localStorage.setItem('pMoney', myMoney)
+  localStorage.setItem('pGames', gamesPlayed)
+  localStorage.setItem('pWins', gamesWon)
+  localStorage.setItem('pBlackjacks', playerBJ)
 }

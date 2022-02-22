@@ -9,8 +9,10 @@ function deal(){
     }
     if (betAmount === 0){
         document.getElementById("betAmount").innerHTML = `Current bet is $0.00. Raise your bet.`;
-    } else if (betAmount > 0 && myMoney <= 0){
-        document.getElementById("betAmount").innerHTML = `Current bet of $${betAmount.toFixed(2)}is too high.`;
+        return;
+    } else if (betAmount > 0 && myMoney < 0){
+        document.getElementById("betAmount").innerHTML = `Current bet of $${betAmount.toFixed(2)} is too high.`;
+        return;
     }
     // new deal clears all variables
     clearHands()

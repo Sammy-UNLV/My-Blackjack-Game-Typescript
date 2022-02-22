@@ -18,3 +18,5 @@ The house will always hit with a losing hand.
 The hand with the higher score wins, and a tie (a push) has no winner or loser.
 
 
+
+
