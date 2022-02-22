@@ -109,3 +109,8 @@ function renderDeck()
 		document.getElementById("deck").appendChild(cardDiv);
 	}
 }
+
+createDeck();
+// remove jokers at 52 and 53
+deckOfCards.splice(52,2);
+shuffle();

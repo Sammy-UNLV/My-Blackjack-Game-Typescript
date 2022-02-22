@@ -22,15 +22,15 @@
                 </div>
                 <br>
                 <div class="bet">
-                    <label id="betAmount">$0.00</label><br>
-                    <button id="play">Deal</button>
-                    <button id="raiseBet">Raise Bet</button>
-                    <button id="lowerBet">Lower Bet</button>
+                    <label id="betAmount" class="elementToFadeInAndOut">$0.00</label><br>
+                    <button id="play" onClick="betBtn()">Deal</button>
+                    <button id="raiseBet" onClick="defaultBTN()">Raise Bet</button>
+                    <button id="lowerBet" onClick="defaultBTN()">Lower Bet</button>
                     
                 </div>
                 <br>
                 <div id="playerDiv">
-                    <div><p class="names" id="playerName">Player Hand</p></div>
+                    <div><p class="names" id="playerName" >Player Hand</p></div>
                     <div id="playerHand"><img id="dealtCard" src="./assets/cards/BACK1.png"><img id="dealtCard" src="./assets/cards/BACK1.png"></div>
                 </div>
                 <div class="controls">
@@ -38,16 +38,19 @@
 
                     <button type="button" id="hitBtn" onClick="hit('player')">Hit</button>
                     
-                    <button type="button" id="standBtn">Stand</button>
+                    <button type="button" id="standBtn"onClick="defaultBTN()">Stand</button>
                 </div>
             </div>
         </div>
         <div class="grid-item">
+            <P class="statLabel">Player</P>
+            <p class="statLabel" id="userName">Guest</p>
+            <br>
             <P class="statLabel">MONEY</P>
             <p class="statLabel" id="myMoney">$0.00</p>
             <br>
-            <p class="statLabel">HANDS</p>
-            <p class="statLabel" id="hands">0</p>
+            <p class="statLabel">GAMES</p>
+            <p class="statLabel" id="gamesPlayed">0</p>
             <br>
             <p class="statLabel">W/L</p>
             <p class="statLabel" id="wlp">0%</p>
@@ -60,11 +63,10 @@
         <div class="grid-item"></div>
         <div class="grid-item"></div>
     </div>
-    <button id="clear" onClick="clearTable()">Clear Table</button>
-    <button id="clear" onClick="scoreHand('house')">Score House</button>
-    <script type="text/javascript" src="./assets/cards.js"></script>
-    <script type="text/javascript" src="./assets/buttons.js"></script> 
-    <script type="text/javascript" src="./assets/java.js"></script>  
+    <script type="text/javascript" src="./main.js"></script>  
+    <script type="text/javascript" src="./snds.js"></script> 
+    <script type="text/javascript" src="./cards.js"></script>
+    <script type="text/javascript" src="./buttons.js"></script> 
   
 </body>
 </html>

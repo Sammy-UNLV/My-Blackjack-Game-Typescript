@@ -1,20 +1,7 @@
-/* Color palette */
-:root{
-
-    --main1-color: black;
-    --main2-color: #2C430E;
-    --sec1-color: #537922;
-    --sec2-color: #ABCC79;
-    --light1-color: #C1CB7C;
-    --light2-color: #D8E8C1;
-
-    --score-color: #f89633;
-    --scorebk-color: #234334;
-    --scorebrd-color: #fffcff;
-    --empty-color: #606060;
+:root {
+    --animation-iteration-count: 0;
+    --opacity: 100%;
 }
-
-
 /* Game header to be bold */
 
 .deck .card
@@ -92,9 +79,25 @@
     font-weight: bold;
     color:gold;
 }
-#myMoney, #hands, #wlp, #blackJacks
+#myMoney, #gamesPlayed, #wlp, #blackJacks, #userName
 {
     font-size:large;
     font-weight: normal;
     color:gold;
+}
+
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout 1s linear forwards;
+    animation: fadeinout 1s linear forwards;
+    animation-iteration-count: var(--animation-iteration-count);
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: var(--opacity); }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: var(--opacity); }
+  50% { opacity: 1; }
 }
