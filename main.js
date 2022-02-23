@@ -18,29 +18,10 @@ inPlayCheck(false);
 let hole = true;
 
 //Get data from localhost
-// playerName = localStorage.getItem('pName');
-// if (playerName ===null){
-//   playerName = "No One"
-// }
-// let w = localStorage.getItem('pMoney')
-// myMoney = parseInt(w);
-// console.log(typeof myMoney + myMoney)
-// if (myMoney <= 0 ){
-//   updateMoney(1000)
-// }
-// let x = localStorage.getItem('pGames')
-// gamesPlayed = parseInt(x);
-// if (gamesPlayed === null){
-//   gamesPlayed = 0
-// }
-// let y = localStorage.getItem('pBlackjacks')
-// playerBJ = parseInt(y);
-// if (gamesPlayed === null){
-//   gamesPlayed = 0
-// }
+
 document.getElementById("userName").innerHTML = playerName;
 
-
+// Start gamew with $1000
 updateMoney(1000);
 
 
@@ -211,10 +192,6 @@ function updateStats(){
   document.getElementById("wins").innerHTML = gamesWon;
   document.getElementById("wlp").innerHTML = wlp.toFixed(2) + "%";
   document.getElementById("blackJacks").innerHTML = playerBJ;
-  
-  // update localSotage
-  // localStorage.setItem('pMoney', myMoney)
-  // localStorage.setItem('pGames', gamesPlayed)
-  // localStorage.setItem('pWins', gamesWon)
-  // localStorage.setItem('pBlackjacks', playerBJ)
+
+  // Insert localStorage set
 }

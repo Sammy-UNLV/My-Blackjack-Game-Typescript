@@ -98,16 +98,16 @@
 .elementToFadeInAndOut {
     -webkit-animation: fadeinout 1s linear forwards;
     animation: fadeinout 1s linear forwards;
-    animation-iteration-count: var(--animation-iteration-count);
+    animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes fadeinout {
-  0%,100% { opacity: var(--opacity); }
+  0%,100% { opacity: 50%; }
   50% { opacity: 1; }
 }
 
 @keyframes fadeinout {
-  0%,100% { opacity: var(--opacity); }
+  0%,100% { opacity: 50%; }
   50% { opacity: 1; }
 }
 .button {
@@ -128,4 +128,7 @@
   }
   .button:disabled{
     background-color: #7a9b7b;  
+  }
+  .button:active{
+    border: #faf8dd;
   }
