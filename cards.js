@@ -76,7 +76,7 @@ function createDeck()
 //This code originated from thatsoftwaredude.com, i had to add the image location code to the code.
 function shuffle()
 {
-	// for 1000 turns
+	// for 200 turns
 	// switch the values of two random cards
 	for (let i = 0; i < 200; i++)
 	{
@@ -88,8 +88,6 @@ function shuffle()
 		deckOfCards[location2] = tmp;
 	}
 
-    // the render is just for testing on the card_viwer page.
-    // renderDeck();
 }
 //This code is just to find if the images appear
 //Remove when the card gameis being built

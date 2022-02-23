@@ -2,6 +2,7 @@
 // Deals the cards to the House and the player
 document.getElementById("play").addEventListener("click", deal);
 function deal(){
+
     if(deckOfCards.length < 35){
         createDeck();
         deckOfCards.splice(52,2);
