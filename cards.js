@@ -89,24 +89,6 @@ function shuffle()
 	}
 
 }
-//This code is just to find if the images appear
-//Remove when the card gameis being built
-function renderDeck()
-{
-    document.getElementById("deck").innerHTML = "";
-    let = imgRoot = "./assets/cards/"
-	for(let i = 0; i < deckOfCards.length; i++)
-	{
-		let cardDiv = document.createElement("div");
-		let valueDiv = document.createElement("div");
-        let cardImage= document.createElement("img");
-		cardDiv.className = "card";
-        cardImage.className = "card";
-        cardImage.src=`${imgRoot}${deckOfCards[i].img}`;
-		cardDiv.innerHTML = `<img src="${cardImage.src}" alt="${deckOfCards[i].type}_${deckOfCards[i].suite}" width="95" height="150">`
-		document.getElementById("deck").appendChild(cardDiv);
-	}
-}
 
 createDeck();
 // remove jokers at 52 and 53

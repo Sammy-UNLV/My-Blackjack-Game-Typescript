@@ -1,8 +1,3 @@
-:root {
-    --animation-iteration-count: 0;
-    --opacity: 100%;
-    
-}
 /* Game header to be bold */
 body{
   background-color: black;
@@ -69,7 +64,7 @@ body{
 }
 #dealtCard
 {
-    width: 120px;
+    width: 130px;
     height: 190px;
 }
 .names
@@ -107,21 +102,24 @@ body{
     color:gold;
 }
 
-.elementToFadeInAndOut {
+/* A solution found on stack overflow */
+.blinkingText {
     -webkit-animation: fadeinout 1s linear forwards;
     animation: fadeinout 1s linear forwards;
-    animation-iteration-count: 0;
+    animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes fadeinout {
-  0%,100% { opacity: 100%; }
+  0%,100% { opacity: 80%; }
   50% { opacity: 1; }
 }
 
 @keyframes fadeinout {
-  0%,100% { opacity: 100%; }
+  0%,100% { opacity: 80%; }
   50% { opacity: 1; }
 }
+/* A solution found on stack overflow */
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
